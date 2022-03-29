@@ -9,6 +9,7 @@ COPY ./ /physionet
 WORKDIR /physionet
 
 ## Install your dependencies here using apt install, etc.
+RUN pip install --upgrade pip
 
 ## Include the following line if you have a requirements.txt file.
 RUN pip install -r requirements.txt
